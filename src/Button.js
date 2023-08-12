@@ -7,6 +7,8 @@ function Button({btnText}) {
     <div>
       <h3>{state ? "Hello" : "Something went wrong"}</h3>
       <button
+        role="button"
+        data-cy="submit-btn"
         onClick={() => setState((prev) => !prev)}
         style={{ color: "red", backgroundColor: "cyan" }}
       >
